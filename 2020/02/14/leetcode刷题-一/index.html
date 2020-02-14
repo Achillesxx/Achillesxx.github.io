@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="Java 技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://achillesxxx.github.io/tags/index.html">
+<meta name="description" content="两数求和问题给定一个整数数组nums和一个目标值target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。示例:给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9所以返回 [0, 1] 第一种解法遍历每个元素 xx，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode刷题(一)">
+<meta property="og:url" content="https://achillesxxx.github.io/2020/02/14/leetcode%E5%88%B7%E9%A2%98-%E4%B8%80/index.html">
 <meta property="og:site_name" content="Achilles Blog">
-<meta property="og:description" content="Java 技术博客">
+<meta property="og:description" content="两数求和问题给定一个整数数组nums和一个目标值target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。示例:给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9所以返回 [0, 1] 第一种解法遍历每个元素 xx，">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-01T03:49:37.000Z">
-<meta property="article:modified_time" content="2020-02-01T04:05:41.525Z">
+<meta property="article:published_time" content="2020-02-14T05:55:56.000Z">
+<meta property="article:modified_time" content="2020-02-14T06:42:15.064Z">
 <meta property="article:author" content="小鑫">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://Achillesxxx.github.io/tags/"/>
+  <link rel="canonical" href="https://Achillesxxx.github.io/2020/02/14/leetcode刷题-一/"/>
 
 
 
 
 
-  <title>tags | Achilles Blog</title>
+  <title>leetcode刷题(一) | Achilles Blog</title>
   
 
 
@@ -285,40 +285,164 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Achillesxxx.github.io/2020/02/14/leetcode%E5%88%B7%E9%A2%98-%E4%B8%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Achilles Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                1 tag in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/%E7%AE%80%E4%BB%8B/" style="font-size: 12px; color: #ccc">简介</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">leetcode刷题(一)</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-14T13:55:56+08:00">
+                2020-02-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="两数求和问题"><a href="#两数求和问题" class="headerlink" title="两数求和问题"></a>两数求和问题</h1><p>给定一个整数数组nums和一个目标值target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。<br>示例:<br>给定 nums = [2, 7, 11, 15], target = 9<br>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p>
+<h2 id="第一种解法"><a href="#第一种解法" class="headerlink" title="第一种解法"></a>第一种解法</h2><p>遍历每个元素 xx，并查找是否存在一个值与 target - xtarget−x 相等的目标元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int[] twoSum(int[] nums, int target) &#123;</span><br><span class="line">        for(int i &#x3D; 0;i &lt; nums.length;i++)&#123;</span><br><span class="line">            for(int j &#x3D; i+1;j&lt;nums.length;j++)&#123;</span><br><span class="line">                if(nums[i] + nums[j] &#x3D;&#x3D; target)&#123;</span><br><span class="line">                    return new int[]&#123;i,j&#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        throw new IllegalArgumentException(&quot;No two sum solution&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>复杂度分析：</p>
+<p>时间复杂度：O(n^2)<br>对于每个元素，我们试图通过遍历数组的其余部分来寻找它所对应的目标元素，这将耗费 O(n) 的时间。因此时间复杂度为 O(n^2)<br>空间复杂度：O(1)。</p>
+<h2 id="第二种解法（两次哈希表）"><a href="#第二种解法（两次哈希表）" class="headerlink" title="第二种解法（两次哈希表）"></a>第二种解法（两次哈希表）</h2><p>通过以空间换取速度的方式，我们可以将查找时间从 O(n)降低到 O(1)。哈希表正是为此目的而构建的，它支持以近似 恒定的时间进行快速查找。我用“近似”来描述，是因为一旦出现冲突，查找用时可能会退化到 O(n)O(n)。但只要你仔细地挑选哈希函数，在哈希表中进行查找的用时应当被摊销为 O(1)。<br>一个简单的实现使用了两次迭代。在第一次迭代中，我们将每个元素的值和它的索引添加到表中。然后，在第二次迭代中，我们将检查每个元素所对应的目标元素（target - nums[i])是否存在于表中。注意，该目标元素不能是nums[i]本身！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution&#123;</span><br><span class="line">	public int[] twoSum(int[] nums,int target)&#123;</span><br><span class="line">		Map&lt;Integer,Integer&gt;map &#x3D; new HashMap&lt;&gt;();</span><br><span class="line">		for (int &#x3D; 0;i&lt;nums.length;i++)&#123;</span><br><span class="line">			map.put(nums[i],i);</span><br><span class="line">		&#125; </span><br><span class="line">		for(int i &#x3D; 0,i&lt;nums.length;i++)&#123;</span><br><span class="line">			int j &#x3D; target - num[i]</span><br><span class="line">			if(map.containKey(j) &amp;&amp; map.get(j) !&#x3D; i)&#123;</span><br><span class="line">				return new int[]&#123;i,map.get(j)&#125;;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		throw new IllegalArgumentException(&quot;No two sum solution&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>时间复杂度：O(n)，<br>我们把包含有n个元素的列表遍历两次。由于哈希表将查找时间缩短到O(1),所以时间复杂度为O(n)。<br>空间复杂度：O(n)，<br>所需的额外空间取决于哈希表中存储的元素数量，该表中存储了n个元素。</p>
+<h2 id="第三种解法（一次哈希表）"><a href="#第三种解法（一次哈希表）" class="headerlink" title="第三种解法（一次哈希表）"></a>第三种解法（一次哈希表）</h2><p>在进行迭代并将元素插入到表中的同时，我们还会回过头来检查表中是否已经存在当前元素所对应的目标元素。如果它存在，那我们已经找到了对应解，并立即将其返回。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int[] twoSum(int[] nums, int target) &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map &#x3D; new HashMap&lt;&gt;();</span><br><span class="line">        for (int i &#x3D; 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">            int complement &#x3D; target - nums[i];</span><br><span class="line">            if (map.containsKey(complement)) &#123;</span><br><span class="line">                return new int[] &#123; map.get(complement), i &#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        throw new IllegalArgumentException(&quot;No two sum solution&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>复杂度分析：</p>
+<p>时间复杂度：O(n)，<br>我们只遍历了包含有 nn 个元素的列表一次。在表中进行的每次查找只花费O(1)的时间。<br>空间复杂度：O(n，<br>所需的额外空间取决于哈希表中存储的元素数量，该表最多需要存储n个元素。</p>
+
       
     </div>
     
     
     
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/03/Spring-Boot%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%EF%BC%88%E4%B8%80%EF%BC%89/" rel="next" title="Spring Boot学习心得（一）">
+                <i class="fa fa-chevron-left"></i> Spring Boot学习心得（一）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -351,8 +475,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -434,6 +567,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#两数求和问题"><span class="nav-number">1.</span> <span class="nav-text">两数求和问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一种解法"><span class="nav-number">1.1.</span> <span class="nav-text">第一种解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二种解法（两次哈希表）"><span class="nav-number">1.2.</span> <span class="nav-text">第二种解法（两次哈希表）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三种解法（一次哈希表）"><span class="nav-number">1.3.</span> <span class="nav-text">第三种解法（一次哈希表）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
